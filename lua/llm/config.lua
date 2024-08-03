@@ -6,13 +6,7 @@ local default_config = {
   url = nil,
   tokens_to_clear = { "<|endoftext|>" },
   ---@class llm_config_request_body
-  request_body = {
-    parameters = {
-      max_new_tokens = 60,
-      temperature = 0.2,
-      top_p = 0.95,
-    },
-  },
+  request_body = {},
   ---@class llm_config_fim
   fim = {
     enabled = true,
