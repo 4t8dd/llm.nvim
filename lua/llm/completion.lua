@@ -94,6 +94,7 @@ function M.lsp_suggest()
     end
     api.nvim_buf_set_extmark(0, M.ns_id, line, col, extmark)
     M.shown_suggestion = result
+    vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<C-c>", true, false, true), "n", false)
   end)
 end
 
